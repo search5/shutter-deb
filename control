@@ -1,15 +1,39 @@
 Source: shutter
-Section: unknown
+Section: graphics
 Priority: optional
 Maintainer: jiho lee <search5@gmail.com>
 Build-Depends: debhelper (>= 11)
 Standards-Version: 4.1.3
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Browser: https://salsa.debian.org/debian/shutter
-#Vcs-Git: https://salsa.debian.org/debian/shutter.git
+Homepage: http://shutter-project.org/
+Vcs-Browser: https://github.com/shutter-project/shutter
+Vcs-Git: https://github.com/shutter-project/shutter.git
 
 Package: shutter
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcarp-clan-perl,libcarp-always-perl, libnumber-bytes-human-perl, libpango-perl, libgtk3-perl, libfile-copy-recursive-perl, libproc-simple-perl, libgoocanvas2-perl, libextutils-depends-perl, libimage-magick-perl, libjson-maybexs-perl, libnet-oauth-perl, libnet-oauth2-perl, libpath-class-perl, libwww-mechanize-perl
+Suggests: nautilus-sendto, libimage-exiftool-perl, libnet-dbus-glib-perl, libimage-exif-perl
+Description: feature-rich screenshot program
+ Shutter is a feature-rich screenshot program. You can take a
+ screenshot of a specific area, window, your whole screen, or even of
+ a website - apply different effects to it, draw on it to highlight
+ points, and then upload to an image hosting site, all within one
+ window.
+ .
+ Features:
+    * take a screenshot of your complete desktop, a rectangular area
+      or capture a website
+    * take screenshot directly or with a specified delay time
+    * save the screenshots to a specified directory and name them in a
+      convenient way (using special wild-cards)
+    * Shutter is fully integrated into the GNOME Desktop (TrayIcon etc.)
+    * generate thumbnails directly when you are taking a screenshot
+      and set a size level in %
+    * Shutter session collection
+          o keep track of all screenshots during session
+          o copy screeners to clipboard
+          o print screenshots
+          o delete screenshots
+          o rename your file
+    * upload your files directly to Image-Hosters (e.g. imgur.com), retrieve
+      all the needed links and share them with others
+    * edit your screenshots directly using the embedded drawing tool

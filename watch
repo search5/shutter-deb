@@ -1,0 +1,2 @@
+version=3
+https://github.com/shutter-project/shutter/archive/refs/tags/ v([0-9.]+)\.tar\.gz
