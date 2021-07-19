@@ -10,8 +10,8 @@ Vcs-Git: https://github.com/shutter-project/shutter.git
 
 Package: shutter
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, libcarp-clan-perl,libcarp-always-perl, libnumber-bytes-human-perl, libpango-perl, libgtk3-perl, libfile-copy-recursive-perl, libproc-simple-perl, libgoocanvas2-perl, libextutils-depends-perl, libimage-magick-perl, libjson-maybexs-perl, libnet-oauth-perl, libnet-oauth2-perl, libpath-class-perl, libwww-mechanize-perl
-Suggests: nautilus-sendto, libimage-exiftool-perl, libnet-dbus-glib-perl, libimage-exif-perl
+Depends: ${shlibs:Depends}, ${misc:Depends}, libcarp-always-perl, libnumber-bytes-human-perl, libpango-perl, libgtk3-perl, libfile-copy-recursive-perl, libproc-simple-perl, libgoocanvas2-perl, libextutils-depends-perl, libimage-magick-perl, libjson-maybexs-perl, libnet-oauth-perl, libnet-oauth2-perl, libpath-class-perl, libwww-mechanize-perl, gir1.2-appindicator3-0.1, libnet-dbus-perl
+Suggests: nautilus-sendto, libimage-exiftool-perl, libimage-exif-perl
 Description: feature-rich screenshot program
  Shutter is a feature-rich screenshot program. You can take a
  screenshot of a specific area, window, your whole screen, or even of
@@ -21,7 +21,6 @@ Description: feature-rich screenshot program
  .
  Features:
     * take a screenshot of your complete desktop, a rectangular area
-      or capture a website
     * take screenshot directly or with a specified delay time
     * save the screenshots to a specified directory and name them in a
       convenient way (using special wild-cards)
